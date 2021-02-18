@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inputs</title>
+</head>
+<body>
+    <center><h1>Contact us</h1></center>
+    <hr size="3" noshade color="navy">
+    <a href="index.html">Home</a>
+    <a href="pirates.html">Pirates</a>
+    <a href="ships.html">Ships</a>
+    <a href="flags.html">Flags</a>
+    <a href="contactus.html">Contact us</a>
+    
+    <h3>Informations</h3>
+    <table width="1000" align="center" border="2">
+        <tr>
+            <td>This website is written using only HTML code. Its purpose is to show how a website can look
+                like using pure html without any CSS or JavaScript. It reveals aspects such as paragraphs, inputs, forms and 
+                tables and many more. Feel free to use the code experiment and enjoy yourself. </td>
+        </tr> 
+    </table>
+    <p>name: Leonidas Dimokas <br> email: misterlemo@gmail.com</p>
+    <hr size="3" noshade color="navy">
+    <form class="" action="mailto:misterlemo@gmail.com" method="post" enctype="text/plain">
+        <label><h3>Add some information</h3></label>
+        <div>
+            <label>Enter your name:</label><br>
+            <input type="text" name="name" required>
+        </div><br>
+        <div>
+            <label>Enter your email:</label><br>
+            <input type="email" name="email" required>
+        </div><br>
+        <input type="radio" name="gender" required value="male">
+        <label>Male</label>
+        <input type="radio" name="gender" required value="female">
+        <label>Female</label>
+        <input type="radio" name="gender" required value="other">
+        <label>Other</label><br><br>
+        <label>Upload your file:</label><br>
+        <input type="file" name="uploadfile">
+        <input type="date" name="date1"><br><br>
+        <div>
+            <label><h4>Write which pirate, ship and flag you choose for the battle! And..tell us a few words.</h4></label>
+            <textarea name="name" rows="8" cols="80"></textarea><br>
+            <input type="checkbox" name="over18" required>
+            <label>I am over 18</label><br><br>
+            <input type="submit">
+        </div>
+    </form>
+    <!--each input field must have a name attribute to be submitted-->
+</body>
+</html>
